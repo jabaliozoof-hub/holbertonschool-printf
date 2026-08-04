@@ -6,5 +6,6 @@
 
 int print_char(va_list args);
 int print_percent(void);
+int print_string(va_list args);
 
 #endif
