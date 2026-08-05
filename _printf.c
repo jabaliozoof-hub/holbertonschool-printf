@@ -32,9 +32,9 @@ int _printf(const char *format, ...)
 		}
 
 		i++;
+		if (format[i] == '\0')
+			break;
 
-    	if (format[i] == '\0')   /* ← هذا الفحص الناقص */
-        break;            
 		if (format[i] == '%')
 		{
 			count += print_percent();
