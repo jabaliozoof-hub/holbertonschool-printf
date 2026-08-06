@@ -10,6 +10,7 @@ For Task 0, we have implemented the following core specifiers:
 * `%c`: Prints a single character.
 * `%s`: Prints a string of characters.
 * `%%`: Prints a literal percent sign.
+* `%i` / `%d` : Prints an integer.
 
 ## Authors
 * **Ozoof**
