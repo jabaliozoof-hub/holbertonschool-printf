@@ -16,3 +16,4 @@ For Task 0, we have implemented the following core specifiers:
 * **Ozoof**
 * **Lujain**
 * **Abdulrahman**
+
