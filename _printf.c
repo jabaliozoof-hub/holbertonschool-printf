@@ -3,7 +3,7 @@
 /**
  * _printf - تطبع مخرجات بصيغة معينة، شبيهة بدالة printf
  * @format: سترنق التنسيق يحتوي على النص والمحددات (specifiers)
- *
+ * 
  * Return: عدد الحروف المطبوعة، أو -1 عند الخطأ
  */
 int _printf(const char *format, ...)
@@ -11,12 +11,13 @@ int _printf(const char *format, ...)
 	va_list args;
 	int i, j, count, found;
 
-	handler_t handlers[] = {
-		{'c', print_char},
-		{'s', print_string},
-		{'\0', NULL}
-	};
-
+handler_t handlers[] = {
+	{'c', print_char},
+	{'s', print_string},
+	{'d', print_decimal},
+	{'i', print_i},
+	{'\0', NULL}
+};
 	if (format == NULL)
 		return (-1);
 
