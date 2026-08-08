@@ -11,13 +11,14 @@ int _printf(const char *format, ...)
 	va_list args;
 	int i, j, count, found;
 
-handler_t handlers[] = {
-	{'c', print_char},
-	{'s', print_string},
-	{'d', print_decimal},
-	{'i', print_i},
-	{'\0', NULL}
-};
+	handler_t handlers[] = {
+		{'c', print_char},
+		{'s', print_string},
+		{'d', print_decimal},
+		{'i', print_i},
+		{'b', print_binary},
+		{'\0', NULL}
+	};
 	if (format == NULL)
 		return (-1);
 
