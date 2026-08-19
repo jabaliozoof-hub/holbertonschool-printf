@@ -10,16 +10,16 @@ A custom implementation of `_printf` for the Holberton/ALX low-level programming
 * `%%` - prints a literal percent sign
 
 ### Prototype
+
 ```c
 int _printf(const char *format, ...);
-
 Return
 The number of characters printed (not counting the null byte).
 
 Files
 main.h - header file with all prototypes (include guarded)
 
-_printf.c - _printf and its helper functions (print_char, print_string, print_percent, print_decimal, print_i, print_unsigned, print_binary)
+_printf.c - _printf and its helper functions
 
 Task 1 - %d and %i
 _printf now also supports signed decimal integers:
@@ -34,6 +34,7 @@ Return
 The number of characters printed (not counting the null byte).
 
 Compiling
+Bash
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o _printf_test
 Compile together with your own main.c that includes main.h.
 
@@ -60,6 +61,7 @@ Return
 The number of characters printed (not counting the null byte).
 
 Examples
+C
 #include "main.h"
 
 int main(void)
@@ -75,6 +77,7 @@ int main(void)
     return (0);
 }
 Output:
+Plaintext
 Char: H
 String: Hello
 Percent: %
@@ -83,9 +86,12 @@ Unsigned: 42
 Octal: 52
 Hex: ff, FF
 Binary: 101
-
 Testing notes
-Output was compared manually against real printf on the same inputs (WSL/Linux, glibc), including edge cases: a format string ending in a lone %, %s with a NULL argument, and negative numbers with %d.
+Output was compared manually against real printf on the same inputs (WSL/Linux, glibc), including edge cases.
 
-Authors:
-Abdulrahman Saleh Alduqail, Ozoof Esmail Jabali, Lujain Abdul Mohsen Alsultan.
+Authors
+Ozoof Ismail Jabali
+
+Lujain Abdulmohsen Alsultan
+
+Abdulrahman Saleh Alduqail
