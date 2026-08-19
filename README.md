@@ -13,6 +13,7 @@ A custom implementation of `_printf` for the Holberton/ALX low-level programming
 
 ```c
 int _printf(const char *format, ...);
+
 Return
 The number of characters printed (not counting the null byte).
 
@@ -34,8 +35,8 @@ Return
 The number of characters printed (not counting the null byte).
 
 Compiling
-Bash
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o _printf_test
+
 Compile together with your own main.c that includes main.h.
 
 Task 2 - %u, %o, %x, %X
@@ -61,7 +62,6 @@ Return
 The number of characters printed (not counting the null byte).
 
 Examples
-C
 #include "main.h"
 
 int main(void)
@@ -77,7 +77,6 @@ int main(void)
     return (0);
 }
 Output:
-Plaintext
 Char: H
 String: Hello
 Percent: %
