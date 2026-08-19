@@ -19,7 +19,7 @@ The number of characters printed (not counting the null byte).
 Files
 main.h - header file with all prototypes (include guarded)
 
-_printf.c - _printf and its helper functions
+_printf.c - _printf and its helper functions (print_char, print_string, print_percent, print_decimal, print_i, print_unsigned, print_binary)
 
 Task 1 - %d and %i
 _printf now also supports signed decimal integers:
@@ -87,7 +87,7 @@ Octal: 52
 Hex: ff, FF
 Binary: 101
 Testing notes
-Output was compared manually against real printf on the same inputs (WSL/Linux, glibc), including edge cases.
+Output was compared manually against real printf on the same inputs (WSL/Linux, glibc), including edge cases: a format string ending in a lone %, %s with a NULL argument, and negative numbers with %d.
 
 Authors
 Ozoof Ismail Jabali
