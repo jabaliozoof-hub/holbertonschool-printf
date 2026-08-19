@@ -1,4 +1,3 @@
-```markdown
 # holbertonschool-printf
 
 A custom implementation of `_printf` for the Holberton/ALX low-level programming curriculum.
@@ -124,7 +123,3 @@ Output was compared manually against real `printf` on the same inputs (WSL/Linux
 * Ozoof Ismail Jabali
 * Lujain Abdulmohsen Alsultan
 * Abdulrahman Saleh Alduqail
-
-```
-
-```
